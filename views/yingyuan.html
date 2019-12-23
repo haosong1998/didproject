@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578447_7kah3u3ksua.css">
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+			    color: orange;
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<body>
+		<h1>影院页面</h1>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../dianying.html">
+				<div class="iconfont icon-dianying"></div>
+				<div class="mui-tab-label">电影</div>
+			</a>
+			<a class="mui-tab-item mui-active">
+				<div class="iconfont icon-yingyuan"></div>
+				<div class="mui-tab-label">影院</div>
+			</a>
+			<a class="mui-tab-item" href="./zixun.html">
+				<div class="iconfont icon-zixun"></div>
+				<div class="mui-tab-label">资讯</div>
+			</a>
+			<a class="mui-tab-item" href="./wode.html">
+				<div class="iconfont icon-wode"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+			mui("body").on("tap", "a", function() {
+				document.location.href = this.href;
+			})
+		</script>
+	</body>
+</html>
